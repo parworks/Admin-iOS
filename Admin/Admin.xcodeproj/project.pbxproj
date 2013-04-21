@@ -18,6 +18,7 @@
 		43889B2615E98DC2001B0C4D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43889B2515E98DC2001B0C4D /* MobileCoreServices.framework */; };
 		43D330DE16097E4C0043B64C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D330DD16097E4C0043B64C /* CoreLocation.framework */; };
 		A02713D0166C6DFA005E91EE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02713CF166C6DFA005E91EE /* MediaPlayer.framework */; };
+		A057A6801724786E00662670 /* ARCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A057A67F1724786E00662670 /* ARCore.bundle */; };
 		A09A8F271723249D000D9AF7 /* AdminAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A8EF21723249D000D9AF7 /* AdminAppDelegate.m */; };
 		A09A8F281723249D000D9AF7 /* ARAugmentedPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09A8EF51723249D000D9AF7 /* ARAugmentedPhotosViewController.m */; };
 		A09A8F291723249D000D9AF7 /* ARAugmentedPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09A8EF61723249D000D9AF7 /* ARAugmentedPhotosViewController.xib */; };
@@ -59,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A057A67E1724786E00662670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A09A92F5172333D2000D9AF7 /* ARCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A057A60117244FAB00662670;
+			remoteInfo = ARCoreResources;
+		};
 		A09A92F9172333D2000D9AF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A09A92F5172333D2000D9AF7 /* ARCore.xcodeproj */;
@@ -305,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				A09A92FA172333D2000D9AF7 /* libARCore.a */,
+				A057A67F1724786E00662670 /* ARCore.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,6 +373,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A057A67F1724786E00662670 /* ARCore.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ARCore.bundle;
+			remoteRef = A057A67E1724786E00662670 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A09A92FA172333D2000D9AF7 /* libARCore.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -378,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A057A6801724786E00662670 /* ARCore.bundle in Resources */,
 				A09A8F291723249D000D9AF7 /* ARAugmentedPhotosViewController.xib in Resources */,
 				A09A8F2B1723249D000D9AF7 /* ARAuthViewController.xib in Resources */,
 				A09A8F2D1723249D000D9AF7 /* ARSiteImagesViewController.xib in Resources */,
